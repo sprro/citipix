@@ -1,6 +1,6 @@
 var update = $('#submit-btn'); 
 
-update.click(function() {
+update.click(function(e) {
 	event.preventDefault(); 
 
 var city = $('#city-type').val(); 
