@@ -4,7 +4,6 @@ update.click(function(event) {
 	event.preventDefault(); 
 
 var city = $('#city-type').val(); 
-$('#city-type').val('');
 city = city.toLowerCase().trim();
 
 if(city == 'new york city' || city == 'nyc' || city == 'new york') {
@@ -23,7 +22,10 @@ if(city == 'new york city' || city == 'nyc' || city == 'new york') {
 	$('body').attr('class', 'sydney'); 
 
 } else {
+	alert('You got the cat!');
 	$('body').attr('class', 'cat'); 
 }
+
+$('#city-type').val('');
 
 });
