@@ -1,6 +1,6 @@
 var update = $('#submit-btn'); 
 
-update.click(function(e) {
+update.click(function(event) {
 	event.preventDefault(); 
 
 var city = $('#city-type').val(); 
@@ -11,7 +11,7 @@ if(city == 'new york city' || city == 'nyc' || city == 'new york') {
 	$('body').attr('class', 'nyc'); 
 
 } else if (city == 'san francisco' || city == 'sf' || city == 'san fran' || city == 'bay area') {
-	$('body').attr('class', 'nyc'); 
+	$('body').attr('class', 'sf'); 
 
 } else if (city == 'austin' || city == 'atx') {
 	$('body').attr('class', 'austin');
@@ -21,6 +21,9 @@ if(city == 'new york city' || city == 'nyc' || city == 'new york') {
 
 } else if (city == 'sydney' || city == 'syd') {
 	$('body').attr('class', 'sydney'); 
+
+} else {
+	$('body').attr('class', 'cat'); 
 }
 
 });
